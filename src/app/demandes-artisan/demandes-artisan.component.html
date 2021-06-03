@@ -1,0 +1,34 @@
+<mat-tab-group mat-align-tabs="end">
+  <mat-tab>
+    <ng-template mat-tab-label>
+      Des Demandes  
+    </ng-template>
+    <div class="cards-holder">
+      <div *ngFor="let demande of demandeEncours" class="card mb-3 stretched-link" (click)="openDialog(demande)">
+        <div class="row">
+          <div class="col-md-2 ">
+            <!-- <img class="img-demand img-fluid" src={{demandes[0].Photo}} alt="..."> -->
+            <img class="img-demand img-fluid" src={{demande.photo}} alt="...">
+          </div>
+          <div class="col-md-8 w-100">
+            <div class="card-body">
+              <h5 class="card-title">
+                {{demande.titre}}
+                <span style="color: lightgreen; font-size: large;"><i class="fas fa-circle"></i>
+                </span>
+              </h5>
+              <p class="card-text w-100">
+                <i class="fas fa-tools"></i>
+                {{demande.secteur}}
+              </p>
+              <p class="card-text w-100">
+                <i class="fas fa-calendar"></i>
+                {{demande.date_realisation}}
+              </p>
+              <!-- <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+99 <span class="visually-hidden">unread messages</span></span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-tab>

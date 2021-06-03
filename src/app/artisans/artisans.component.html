@@ -1,0 +1,27 @@
+
+
+<div class="artisans-holder row">
+    <div *ngFor="let artisan of listeArtisan" class="card col-md-3">
+      <img src={{Photo}} class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-title">{{artisan.name}}</p>
+        <p>
+          <i class="fas fa-tools "></i>
+          {{artisan.secteur}}
+        </p>
+        <p class="card-text">
+          <i class="fas fa-book-open"></i>
+          {{artisan.biographie}}
+        </p>
+        <p>
+          <i class="fas fa-phone"></i>
+          {{artisan.phone}}
+        </p>
+        <p>
+          <i class="fas fa-envelope "></i>
+          {{artisan.email}}
+        </p>
+      </div>
+    </div>
+  </div>
+  

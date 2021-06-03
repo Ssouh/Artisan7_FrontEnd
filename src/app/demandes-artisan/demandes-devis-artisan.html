@@ -1,0 +1,114 @@
+<!-- <div class="dialog-holder">
+  <mat-tab>
+  <form (ngSubmit)="newDevis()" class="new-demand-form d-flex flex-column justify-content-center align-items-center" style="margin-top: 3rem;" >
+  
+    <mat-form-field class="w-50">
+      <mat-label>Titre</mat-label>
+      <input matInput name="titre" [(ngModel)]="newdevis.titre" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+
+
+  <mat-form-field class="w-25" appearance="fill">
+    <mat-label>Date de realisation</mat-label>
+    <input matInput [matDatepicker]="picker" name="date_realisation" [(ngModel)]="newdevis.date" [ngModelOptions]="{standalone: true}">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+    <mat-form-field class="w-75">
+      <mat-label>Prix</mat-label>
+      <input matInput name="prix" [(ngModel)]="newdevis.prix" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+
+    <mat-form-field class="w-75">
+      <mat-label>Description</mat-label>
+      <input matInput #description maxlength="100" name="description" [(ngModel)]="newdevis.description" [ngModelOptions]="{standalone: true}">
+      <mat-hint align="end">{{description.value.length}} / 100</mat-hint>
+    </mat-form-field>
+
+  <button class="button-add-demande" type="submit" >Ajouter devis</button>
+
+</form>
+</mat-tab>
+</div>
+
+
+
+
+
+
+
+
+
+
+<style>
+  .dialog-holder {
+    max-height: 80vh;
+  }
+
+  .dialog-title {
+    color: #303DB7;
+    font-family: 'Skranji', cursive;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .modal {
+    background-color: #59CCE2;
+  }
+
+  .description-holder {
+    align-self: initial;
+  }
+
+  .button-postuler {
+    padding: 1rem;
+    background-color: #303DB7;
+    color: #FFF;
+    font-family: 'Skranji', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto auto;
+    font-size: medium;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+  }
+
+  .button-supprimer {
+    padding: 1rem;
+    background-color: #b73030;
+    color: #FFF;
+    font-family: 'Skranji', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto auto;
+    font-size: medium;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+  }
+
+  .address-holder {
+    margin-bottom: 1rem;
+  }
+
+  .client-holder {
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .img-dialog {
+    max-width: 50%;
+  }
+
+  .description-holder {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+</style> -->

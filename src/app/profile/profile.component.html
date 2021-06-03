@@ -1,0 +1,39 @@
+<div class="container profile mat-elevation-z8">
+    <h1 class="userName">{{name}}</h1>
+    <div class="row">
+        <div class="col-md-6 pictureCard mat-elevation-z8">
+            <img [src]="imageUrl" alt="Blueprint Wire illustration" class="imageProf"><br>
+            <label class="note">note :</label>
+            <mat-progress-bar mode="determinate" [value]="note">1</mat-progress-bar>
+        </div>
+        <div class="col-md-6 infos ">
+            <h3> INFORMATIONS: </h3>
+            <div class="information mat-elevation-z4">
+                <mat-icon>build</mat-icon><p class="text">{{secteur}}</p>
+            </div>
+            <div class="information mat-elevation-z4">
+                <mat-icon>email</mat-icon><p class="text">{{email}}</p>
+            </div>
+            <div class="information mat-elevation-z4">
+                <mat-icon>call</mat-icon><p class="text">{{phone}}</p>
+            </div>
+            <div class="information mat-elevation-z4" >
+                <mat-icon>location_on</mat-icon><p class="text">{{adresse}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="biographie">
+        <h3>biographie :</h3>
+        <p class="contenu">
+            {{biographie}}
+        </p>
+    </div>
+    <div class="Projets">
+        <h3>projets :</h3>
+
+    </div>
+    <div class="Avis">
+        <h3>Avis des clients :</h3>
+
+    </div>
+</div>
