@@ -1,0 +1,13 @@
+{
+    "/Artisan7_BackEnd/*": {
+        "target": "http://localhost:8080",
+        "secure": false,
+        "logLevel": "debug",
+        "Access-Control-Allow-Origin":"*"
+    },
+    "/api/": {
+        "target": "http://localhost:8080/",
+        "secure": false,
+        "changeOrigin": true
+    }
+}
